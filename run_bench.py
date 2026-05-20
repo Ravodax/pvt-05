@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 
 # Configuration
-THRESHOLDS = [200, 1000, 4000]
+THRESHOLDS = [200, 1000, 200000]
 NS = [5000000, 10000000, 50000000, 100000000]
 # limit to maximum 8 threads
 MAX_AVAILABLE = os.cpu_count() or 8
