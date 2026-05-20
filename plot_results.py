@@ -114,7 +114,7 @@ def main():
     df = compute_speedup(df)
 
     # Показываем только выбранные пороги и исключаем N=50000000
-    selected_thresholds = [200, 1000, 1000000]
+    selected_thresholds = [200, 1000, 200000]
     df = df[df['threshold'].isin(selected_thresholds)]
     df = df[df['N'] != 50000000]
 
